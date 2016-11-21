@@ -1,0 +1,28 @@
+{
+    "name": "dpwlabs/freegeoipyii",
+    "description": "freegeoip.net extension for Yii2 framework",
+    "keywords": ["yii2", "geoip"],
+    "type": "yii2-extension",
+	"version": "1.0.0",
+    "license": "BSD",
+    "support": {
+        "issues": "https://github.com/RAvenGEr/FreegeoipnetYii/issues",
+        "source": "https://github.com/RAvenGEr/FreegeoipnetYii"
+    },
+    "authors": [
+        {
+            "name": "David Webb",
+            "email": "ravenger@dpwlabs.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "*",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "dpwlabs\\freegeoip\\": ""
+        }
+    }
+}
