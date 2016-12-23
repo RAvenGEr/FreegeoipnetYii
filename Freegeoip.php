@@ -55,6 +55,10 @@ class Freegeoip extends Component
 
     public function getRemoteLocation() {
         $ip_addr = $_SERVER['REMOTE_ADDR'];
+        return getLocation($ip_addr);
+    }
+	
+	public function getLocation($ip_addr) {
         $url = 'http://freegeoip.net/' . $this->config['format'] .'/' . $ip_addr;
         $result = $this->curl_get($url);
         return $result;
